@@ -1,25 +1,25 @@
-package Demo3;
-
+package Demo2;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 
-
 public class app {
 
-	public static void main(String[] args)  {
+	public static void main(String[] args) {
+
+		File file = new File("test.txt");
+
 		try {
-			openFile();
+			FileReader fr = new FileReader(file);
+			
+			//This will not execute if an exception is thrown.
+			System.out.println("Continuing...");
 		} catch (FileNotFoundException e) {
-			//PS. this message is too vague :)
-			System.out.println("Could not open file");
+			System.out.println("File not found: " + file.toString());
 		}
+		System.out.println("Finished.");
 
 	}
-public static void openFile() throws FileNotFoundException {
-	File file = new File("test.txt");
-	
-	FileReader fr = new FileReader(file);
-}
+
 }
