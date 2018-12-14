@@ -1,3 +1,2 @@
 # Tutorial35_Udemy
-Handling exceptions (may contain errors)
-Demo3 uploaded
+Handling exceptions within error messages when reading text files
