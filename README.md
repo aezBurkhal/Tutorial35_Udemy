@@ -1,2 +1,2 @@
 # Tutorial35_Udemy
-Handling exceptions within error messages when reading text files
+Handling exceptions, general understanding of error messages that contain stack traces 
